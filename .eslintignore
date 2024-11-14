@@ -1,0 +1,12 @@
+library/build/vuePlugins/components.d.ts
+node_modules
+src/assets
+src/icons
+public
+dist
+agilebpm/package/bpmn-js
+agilebpm/package/avue-form-design
+agilebpm/package/layout-design
+vab-icons
+libs/**
+libs/ab-bpm

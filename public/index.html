@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="webkit" name="renderer" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link href="<%= BASE_URL %>favicon.ico" rel="icon" />
+    <title>
+        <%= VUE_APP_TITLE %>
+    </title>
+    <meta content="敏捷流程开发平台,agileBPM"
+        name="keywords" />
+    <meta content="<%= VUE_APP_AUTHOR %>" name="author" />
+    <link href="<%= BASE_URL %>static/css/loading.css?random=<%= VUE_APP_RANDOM %>" rel="stylesheet" />
+</head>
+
+<body>
+    <noscript></noscript>
+    <div id="app">
+        <div class="first-loading-wrp">
+            <!-- <img class="logo_top" src="<%= BASE_URL %>static/logo.png" /> -->
+            <h1>
+                <!-- <%= VUE_APP_TITLE %> -->
+                加载中...
+            </h1>
+            <div class="loading-wrp">
+              <span class="dot dot-spin">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </span>
+            </div>
+        </div>
+
+        <!-- <div class="loading-wrp">
+                <span class="dot dot-spin">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+            </div> -->
+    </div>
+
+    <script>
+      // 页面行为统计
+      //不等于127.0.0.1  不以192.168. 开头
+       
+         if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' && window.location.hostname.startsWith('192.168.')  ) { 
+           //console.log("本地访问")
+         }else{
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?8088b93a72fa7df90cae40134702bf9f";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+          })();
+         }
+         
+       
+    </script>
+</body>
+
+</html>

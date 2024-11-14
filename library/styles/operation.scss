@@ -1,0 +1,69 @@
+
+   .layout-container-demo {
+    height: 500px;
+    .el-form{
+      margin-top:20px;
+    }
+  }
+  .layout-container-demo .el-header {
+    position: relative;
+    height: 42px;
+    color: var(--el-text-color-primary);
+    background-color: #fff;
+  }
+  .layout-container-demo .el-main {
+    padding: 0px;
+  }
+  .dividermar {
+    margin-bottom: 0px !important;
+  }
+
+   //左侧分类树相关样式
+   .left-tree {
+     --el-aside-width: 240px;
+     background: white;
+     border-right: 10px solid #f5f7f9;
+     .treeBoxHeight {
+        display: grid;
+        overflow: auto;
+      }
+   }
+
+   .left-tree.noscrollx {
+     overflow-x: hidden !important;
+   }
+
+   @media screen and (max-width: 1690px) {
+     .left-tree {
+       display: none;
+     }
+
+     .left-tree {
+       margin-left: 0px !important;
+     }
+   }
+
+     //数据字典右侧部分相关样式
+     .right-tree {
+      /* padding-left: 10px; */
+      overflow-x: scroll !important;
+      background: white;
+      border-left: 10px solid #f5f7f9;
+    }
+
+    .right-tree.noscrollx {
+      overflow-x: hidden !important;
+    }
+    .alignCenterDialog {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 !important;
+      transform: translate(-50%, -50%);
+
+      .el-dialog__body {
+        flex: 1;
+      }
+    }

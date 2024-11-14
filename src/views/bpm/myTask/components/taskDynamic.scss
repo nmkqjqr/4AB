@@ -1,0 +1,52 @@
+.leftBoxDyminc {
+  float: left;
+  width: calc(100% - 500px);
+  padding: 20px;
+  background: #fff;
+  .leftContent {
+    padding: 12px;
+    overflow: auto;
+    border-top: 1px dashed #ccc;
+  }
+}
+
+.leftBox {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  .leftContent {
+    padding: 12px;
+    overflow: auto;
+    border-top: 1px dashed #ccc;
+  }
+}
+
+.rightBox {
+  float: left;
+  width: 500px;
+  height: 100%;
+  padding: 15px;
+  overflow: hidden;
+  background: #fff;
+  border-left: 10px solid #f5f7f9;
+}
+
+@media only screen and (max-width: 1400px) {
+    .leftBoxDyminc {
+      float: left;
+      width: calc(100% - 0px);
+      padding: 20px;
+      .leftContent {
+        padding: 12px;
+        overflow: auto;
+        border-top: 1px dashed #ccc;
+      }
+    }
+        .rightBox {
+          float: left;
+          width: 0px;
+          padding: 5px;
+          overflow: hidden;
+        }
+}

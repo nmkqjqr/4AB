@@ -1,0 +1,86 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es5",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "types": [
+      "element-plus/global",
+      "webpack-env",
+      "node"
+    ],
+    "paths": {
+      "~/*": [
+        "*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "/#/*": [
+        "./types/*"
+      ],
+      "@vab/*": [
+        "./library/*"
+      ],
+      "@gp": [
+        "./library/plugins/vab"
+      ],
+      "@agilebpm": [
+        "./agilebpm/*"
+      ],
+      "@ab-core": [
+        "./agilebpm/package/ab-core/*"
+      ],
+      "@ab-form": [
+        "./agilebpm/package/ab-form/*"
+      ],
+      "@ab-bpm": [
+        "./agilebpm/package/ab-bpm/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "agilebpm/**/*.vue",
+    "agilebpm/**/*.ts",
+    "agilebpm/**/*.js",
+    "mock/**/*.ts",
+    "types/**/*.d.ts",
+    "library/**/*.ts",
+    "library/**/*.tsx",
+    "library/**/*.vue",
+    "test/**/*.ts",
+    "src/utils/tool.js",
+    "src/libs/bpmn-design/package/defaultConfigJson.js",
+    "src/libs/bpmn-design/package/ab-flow-util.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "library/build/chainWebpack",
+    "library/build/vuePlugins/index.ts",
+    "libs"
+  ]
+}

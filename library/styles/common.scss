@@ -1,0 +1,15 @@
+.vertCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pointer{
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.displayEllipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
